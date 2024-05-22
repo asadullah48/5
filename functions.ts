@@ -49,5 +49,24 @@ let returnArrowFunction = () => { let exampleVar: number = 99 -49 -19;
     return exampleVar;
 }; let responseF:number =returnArrowFunction();
 console.log(responseF);
-
+// returning Parameter & Arguments Functions (5th Method) 
+let returningParameterAndArguments = (w:string, h:string, n:string) => {
+    let exampleVariable = `${w},${h},${n}`
+    return exampleVariable;
+};
+let responseG:string = returningParameterAndArguments("Kiran", "Falaknaz", "Amna");
+console.log(responseG);
+// Variable Scopes
+// 1. Global Variable
+let globalVariable: string = "Learning & Explaining Global Variable";
+function exampleVariable2(){
+    let exampleVariable2: string = "learn" };
+    console.log(globalVariable);
+    // 2. Local Variable
+    let exampleVariable3:string ="understading the use of local variable & different between global variable & local variable";
+    function localVariable(){
+        let localVariable:string= "completed task";
+    }; console.log(localVariable);
+    
+    
 

@@ -43,5 +43,41 @@ spreadOperator("Zubair", 37);
 let basicArrowFunction = () => "ABC, XYZ";
 let responseC = basicArrowFunction();
 console.log(responseC);
+// arrow Functions (2nd Method) using parameters & arguments
+let arrowParametersAndArguments = (ab, ba, cd) => (ab + ba + cd);
+let responseD = arrowParametersAndArguments(7, 17, 97);
+console.log(responseD);
+// arrow Functions (3rd Method) using direct returning 
+let arrowDirectReturningFunction = () => { return 300 + 500 + 700; };
+let responseE = arrowDirectReturningFunction();
+console.log(responseE);
+// arrow return Functions (4th Method) 
+let returnArrowFunction = () => {
+    let exampleVar = 99 - 49 - 19;
+    return exampleVar;
+};
+let responseF = returnArrowFunction();
+console.log(responseF);
+// returning Parameter & Arguments Functions (5th Method) 
+let returningParameterAndArguments = (w, h, n) => {
+    let exampleVariable = `${w},${h},${n}`;
+    return exampleVariable;
+};
+let responseG = returningParameterAndArguments("Kiran", "Falaknaz", "Amna");
+console.log(responseG);
+// Variable Scopes
+// 1. Global Variable
+let globalVariable = "Learning & Explaining Global Variable";
+function exampleVariable2() {
+    let exampleVariable2 = "learn";
+}
+;
+console.log(globalVariable);
+// 2. Local Variable
+let exampleVariable3 = "understading the use of local variable & different between global variable & local variable";
+function localVariable() {
+    let localVariable = "completed task";
+}
+;
+console.log(localVariable);
 export {};
-// arrow Functions (2nd Method)
